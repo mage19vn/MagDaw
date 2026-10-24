@@ -1,0 +1,7 @@
+fastapi>=0.110
+uvicorn>=0.29
+pretty_midi>=0.2.10
+numpy>=1.26
+soundfile>=0.12
+pedalboard>=0.9
+pytest>=8.0
