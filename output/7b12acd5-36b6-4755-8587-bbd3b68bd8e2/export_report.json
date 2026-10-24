@@ -1,0 +1,13 @@
+{
+  "preview": {
+    "peak": 0.2651447355747223,
+    "rms": 0.07077403606216753,
+    "duration_seconds": 40.4
+  },
+  "final": {
+    "peak": 0.7070368528366089,
+    "rms": 0.19365808863329662,
+    "duration_seconds": 40.4
+  },
+  "silent_by_mixer": false
+}

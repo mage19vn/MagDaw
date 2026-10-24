@@ -1,0 +1,294 @@
+.mixer-panel {
+  border: 1px solid #303640;
+  border-radius: 10px;
+  background: #15191f;
+  color: #dfe5ef;
+  overflow: hidden;
+  margin: 12px 16px 16px;
+}
+.mixer-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 56px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #2c333e;
+}
+.mixer-panel h2,
+.mixer-panel h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+.mixer-eyebrow {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #8292a9;
+  margin-bottom: 4px;
+}
+.mixer-panel button {
+  border: 1px solid #3a4351;
+  background: #252c36;
+  color: #dfe5ef;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.mixer-panel button:hover {
+  background: #35404e;
+  border-color: #75859a;
+}
+.mixer-panel button:focus-visible,
+.mixer-panel input:focus-visible {
+  outline: 2px solid #55d6c4;
+  outline-offset: 3px;
+}
+.mixer-panel-header > button {
+  margin-left: auto;
+}
+.mixer-live-label {
+  font-size: 11px;
+  color: #90a0b6;
+}
+.mixer-content {
+  padding: 14px;
+}
+.mixer-tracks {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-color: #526071 #191e26;
+}
+.mixer-strip {
+  flex: 0 0 190px;
+  border: 1px solid #343d49;
+  border-radius: 8px;
+  padding: 12px;
+  background: #1b212a;
+}
+.mixer-strip-muted {
+  background: #191d24;
+}
+.mixer-strip-heading {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.mixer-strip-heading strong {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mixer-track-number {
+  font-variant-numeric: tabular-nums;
+  color: #82a6bd;
+  font-size: 10px;
+}
+.mixer-switches {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.mixer-switches button {
+  width: 28px;
+  height: 25px;
+  padding: 3px;
+  font-weight: 700;
+}
+.mixer-switches span {
+  margin-left: auto;
+  font-size: 10px;
+  color: #8c9aad;
+}
+.mixer-switches .mixer-mute-active {
+  background: #a6444d;
+  border-color: #e87981;
+  color: #fff;
+}
+.mixer-switches .mixer-solo-active {
+  background: #c4952f;
+  border-color: #f7cd69;
+  color: #191611;
+}
+.mixer-range {
+  display: block;
+  margin: 10px 0 4px;
+  min-width: 0;
+}
+.mixer-range > span {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 11px;
+  color: #a9b7c9;
+  white-space: nowrap;
+}
+.mixer-range output {
+  font-variant-numeric: tabular-nums;
+  color: #ecf1f8;
+}
+.mixer-range input {
+  display: block;
+  width: 100%;
+  height: 18px;
+  margin: 5px 0;
+  accent-color: #52c7b5;
+  cursor: ew-resize;
+}
+.mixer-pan-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #8090a5;
+  margin-bottom: 13px;
+}
+.mixer-meter {
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.mixer-meter-rail {
+  flex: 1;
+  min-width: 50px;
+  height: 6px;
+  background: #080d13;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px #303945;
+}
+.mixer-meter-rail > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #40b890 0%,
+    #7ad4a8 72%,
+    #e9c16b 94%,
+    #ef6c76 100%
+  );
+  transition: width 60ms linear;
+}
+.mixer-meter-rail > .mixer-meter-clip {
+  background: #f36f7a;
+}
+.mixer-meter output {
+  min-width: 63px;
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  color: #aab8c8;
+  text-align: right;
+}
+.mixer-master {
+  border-top: 1px solid #2d3541;
+  padding-top: 15px;
+  margin-top: 2px;
+}
+.mixer-master-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.mixer-master-heading > .mixer-meter {
+  width: 260px;
+  margin: 0;
+}
+.mixer-chain {
+  font-size: 11px;
+  color: #a0b4c8;
+  margin: 14px 0;
+}
+.mixer-chain span {
+  color: #536378;
+  margin: 0 6px;
+}
+.mixer-effects {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.85fr) minmax(230px, 1.5fr) minmax(
+      180px,
+      1fr
+    ) minmax(180px, 1fr);
+  gap: 10px;
+}
+.mixer-effect {
+  border: 1px solid #34404f;
+  background: #1b222c;
+  padding: 12px;
+  border-radius: 7px;
+  min-width: 0;
+}
+.mixer-effect header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.mixer-effect header button {
+  padding: 3px 6px;
+  font-size: 10px;
+}
+.mixer-effect small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #8395aa;
+  margin-top: 11px;
+}
+.mixer-effect-bypassed {
+  border-style: dashed;
+  background: #191d24;
+}
+.mixer-effect-bypassed > .mixer-range {
+  opacity: 0.6;
+}
+.mixer-bypass {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #afbdce;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+.mixer-bypass input {
+  accent-color: #57c7b9;
+  margin: 0;
+}
+.mixer-adapter-note {
+  margin: 14px 0 0;
+  color: #8193aa;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.mixer-empty {
+  padding: 10px;
+  color: #93a3b7;
+  font-size: 12px;
+}
+@media (max-width: 1050px) {
+  .mixer-effects {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+  .mixer-live-label {
+    display: none;
+  }
+}
+
+.mixer-track-defaults {
+  display: block;
+  font-size: 9px;
+  color: #8495aa;
+  margin-top: 8px;
+}

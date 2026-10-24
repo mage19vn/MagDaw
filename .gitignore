@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+*.tsbuildinfo
+
+# Tệp cục bộ và thông tin nhạy cảm
+.env
+.env.*
+!.env.example
+*.log
